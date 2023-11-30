@@ -104,6 +104,8 @@ a {
     padding: var(--main-padding) 0;
     background-color: #ececec;
     box-shadow: 0 0 3px #ddd;
+    background-image: url("../images/grunge_detailed_dusty_overlay_texture_2804.jpg");
+    background-size: cover;
 }
 .about .container {
     display: flex;
