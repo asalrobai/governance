@@ -50,12 +50,82 @@ a {
 /* End Global Rules */
 /* Start Components */
 /* End Components */
+.header {
+    background-color: rgb(236, 236, 236);
+    margin-bottom: 3px;
+}
+.header .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+.header .container .logo-img { 
+     height: 80px;
+}
+.header .container .logo-img img {
+   
+    max-height: 100%;
+}
+.header .container .burger-menu {
+    color: #144C5A;
+    font-size: 40px;
+    display: none;
+}
+@media (max-width: 767px) {
+    .header .container .burger-menu {
+        display: inline;
+    }
+}
+.header .container .menu-bar {
+     flex: 1;
+    display: flex;
+    flex-direction: row-reverse;
+    /* justify-content: flex-start; */
+    align-items: center;
+}
+@media (max-width: 767px) {
+    .header .container .menu-bar {
+        display: none;
+    }
+}
+.header .container .nav-main {
+   
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+}
+.header .container .nav-main > li {
+    
+}
+.header .container .nav-main > li > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    padding: 0 20px;
+    color: #144C5A;
+    color:  #1a9039;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.5s;
+}
+.header .container .nav-main > li > a:hover {
+    color: white;
+     background-color: #144C5A;
+}
+.header .container .nav-main > li > a.active {
+    color: white;
+     background-color: #144C5A;
+}
+/* End Header */
 /* Start Landing */
 .landing {
     background-image: url(../images/Landing.png);
     background-size: contain;
     height: 600px;
-    box-shadow: 0 0 10px #ddd;
+    /* box-shadow: 0 0 10px #ddd; */
     position: relative;
 }
 .landing::before {
@@ -78,10 +148,10 @@ a {
     color: rgb(199, 194, 194);
     font-size: 50px;
     position: relative;
-    background-color: #f5f1f14d;
+    /* background-color: #f5f1f14d; */
     padding: 15px;
-    border-radius: 10px;
-    border: 2px solid;
+    /* border-radius: 10px;
+    border: 2px solid; */
     text-align: center;;
 }
 @media (max-width: 991px) {
@@ -105,6 +175,7 @@ a {
     background-color: #ececec;
     box-shadow: 0 0 3px #ddd;
     background-image: url("../images/grunge_detailed_dusty_overlay_texture_2804.jpg");
+    background-image: url("../images/Hexagon-dotted-connect-line-background.jpg");
     background-size: cover;
 }
 .about .container {
