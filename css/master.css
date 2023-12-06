@@ -71,6 +71,7 @@ a {
     color: #144C5A;
     font-size: 40px;
     display: none;
+   
 }
 @media (max-width: 767px) {
     .header .container .burger-menu {
@@ -84,17 +85,18 @@ a {
     /* justify-content: flex-start; */
     align-items: center;
 }
-@media (max-width: 767px) {
-    .header .container .menu-bar {
-        display: none;
-    }
-}
+
 .header .container .nav-main {
    
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-start;
     align-items: center;
+}
+@media (max-width: 767px) {
+    .header .container .nav-main {
+        display: none;
+    }
 }
 .header .container .nav-main > li {
     
