@@ -115,13 +115,30 @@ a {
 }
 .header .container .nav-main > li > a:hover {
     color: white;
-     background-color: #144C5A;
+    background-color: #144C5A;
+
 }
 .header .container .nav-main > li > a.active {
     color: white;
      background-color: #144C5A;
 }
 /* End Header */
+/* Start  Whatsapp Icon  */
+.whatsapp_float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 200px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+/* End  Whatsapp Icon  */
 /* Start Landing */
 .landing {
     background-image: url(../images/Landing.png);
